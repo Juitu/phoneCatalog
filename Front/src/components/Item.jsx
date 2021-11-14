@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { useCatalog } from '../catalogContext';
 
 const Item = ({ product }) => {
-  const { handleDetail, handleDelete } = useCatalog();
+  const { handleDetail } = useCatalog();
   const {
     id,
     name,
@@ -34,14 +34,13 @@ const Item = ({ product }) => {
               <p className="text-capitalize mb-0">+ Info</p>
             </button>
           </Link>
-          <button
+          {/* <button
             className="delete-btn"
-            onClick={() => {
-              handleDelete(id);
+            onClick={() => { handleDelete(id)
             }}
           >
             <p className="text-capitalize mt-0 mb-0">X</p>
-          </button>
+          </button> */}
         </div>
         {/* card footer */}
         <div className="card-footer d-flex justify-content-between">
@@ -106,7 +105,7 @@ const ProductObject = styled.div`
     color: var(--mainGray);
     cursor: pointer;
   }
-
+  /*
   .delete-btn {
     position: absolute;
     top: 0;
@@ -128,6 +127,7 @@ const ProductObject = styled.div`
     color: var(--mainGray);
     cursor: pointer;
   }
+  */
 `;
 
 Item.propTypes = {
