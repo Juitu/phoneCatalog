@@ -1,0 +1,121 @@
+{
+    // Commonly Used
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorStyle": "line",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "on",
+    "editor.snippetSuggestions": "top",
+    "editor.largeFileOptimizations": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // This is for prettier
+    "editor.formatOnSave": true,
+    // Language Specific Settings
+    // Enable per-language formatOnSave per language
+    "[javascript]": {
+      "editor.formatOnSave": false
+    },
+    "[markdown]": {
+      "editor.tabSize": 2,
+      "editor.wordWrap": "on",
+      "editor.quickSuggestions": false
+    },
+    "markdown.preview.fontSize": 16,
+    // markdownlint config object
+    "markdownlint.config": {
+      "MD013": false,
+      "MD024": false,
+      "MD026": {
+        "punctuation": ".,;:!"
+      },
+      "MD030": {
+        "ol_single": 2,
+        "ol_multi": 2
+      }
+    },
+    // ESLint
+    "eslint.alwaysShowStatus": true,
+    // Prettier
+    "prettier.disableLanguages": ["js", "vue"],
+    "prettier.ignorePath": "./.vscode/.prettierignore",
+    // Editor
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.renderSideBySide": true,
+    // Search
+    "search.exclude": {
+      "**/.meteor/local": true,
+      "**/bower_components": true,
+      "**/node_modules": true
+    },
+    // Git
+    "git.defaultCloneDirectory": "~/myGitProjects/",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    // TODO Highlight
+    "todohighlight.include": [
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.html",
+      "**/*.php",
+      "**/*.css",
+      "**/*.scss",
+      "**/*.md"
+    ],
+    "todohighlight.exclude": [
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.vscode/**",
+      "**/.github/**",
+      "**/_output/**",
+      "**/*.min.*",
+      "**/*.map",
+      "**/.next/**",
+      "**/.meteor/**"
+    ],
+    // Workbench
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // Git Lens
+    "gitlens.advanced.messages": {
+      "suppressCommitHasNoPreviousCommitWarning": false,
+      "suppressCommitNotFoundWarning": false,
+      "suppressFileNotUnderSourceControlWarning": false,
+      "suppressGitVersionWarning": false,
+      "suppressLineUncommittedWarning": false,
+      "suppressNoRepositoryWarning": false,
+      "suppressResultsExplorerNotice": false,
+      "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.defaultGravatarsStyle": "monsterid",
+    "gitlens.settings.mode": "advanced",
+    "gitlens.codeLens.scopes": ["document"],
+    "gitlens.views.repositories.branches.layout": "tree",
+    "gitlens.views.repositories.files.layout": "list",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "gitlens.views.compare.files.layout": "list",
+    "gitlens.defaultDateStyle": "absolute",
+    "gitlens.defaultDateFormat": "D MMM YYYY H:mm",
+    "gitlens.defaultDateShortFormat": "D MMM YYYY",
+    // Colorize
+    "colorize.languages": [
+      "javascript",
+      "css",
+      "sass",
+      "scss",
+      "less",
+      "postcss",
+      "sss",
+      "stylus",
+      "xml",
+      "svg"
+    ],
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  }
+  
