@@ -10,6 +10,7 @@ const MSMongo = class MSMongo {
   }
 
   initMicroservices() {
+    
     const MONGODB_NAME = "DCSL";
     const MONGODB_URL = "mongodb://localhost:27017";
 

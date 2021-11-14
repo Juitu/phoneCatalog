@@ -13,13 +13,20 @@ app.use(express.json());
 
 new MSMongo('/ms', app);
 
-app.get('/phones', async (req, res) => {
-  try {
-    res.json(catalog);
-  } catch (err) {
-    console.error(err.message);
-  }
-});
+/*******************************************************************************
+ *                                                                             *
+ *      Next code can be used if MongoDB cannot be properly configured         *
+ *                                                                             *
+ *       app.get('/phones', async (req, res) => {                              *
+ *         try {                                                               *
+ *           res.json(catalog);                                                *
+ *         } catch (err) {                                                     *
+ *           console.error(err.message);                                       *
+ *         }                                                                   *
+ *       });                                                                   *
+ *                                                                             *
+ *                                                                             *
+ *******************************************************************************/
 
 server.listen(3001, function () {
   console.log(`server is starting on port 3001`);
