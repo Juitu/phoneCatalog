@@ -1,6 +1,6 @@
 # README
 
-This project aims to be a Phone Catalog where the user can click any phone and see more information available.
+This project aims to be a Phone Catalog where users can click any phone and see more information available.
 
 Steps to make it work:
 
